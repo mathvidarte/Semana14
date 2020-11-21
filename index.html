@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contactos</title>
+    </head>
+
+    <body>
+        <h3 id="usuario">loading...</h3><br>
+
+        <h4>Tus contactos</h4> 
+        <button id="agregar">+</button>
+
+        <button id="logout">Log out</button>
+    </body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+
+
+<script>
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyBXyv-kzGUGMitC5ph64lzsPJmcr-FHr3o",
+    authDomain: "contact-list-js.firebaseapp.com",
+    databaseURL: "https://contact-list-js.firebaseio.com",
+    projectId: "contact-list-js",
+    storageBucket: "contact-list-js.appspot.com",
+    messagingSenderId: "556900195355",
+    appId: "1:556900195355:web:72b266d801dfb94b4f6cbe",
+    measurementId: "G-1Z910G9P9C"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+<script src="js/index.js"></script>

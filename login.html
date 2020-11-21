@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Log in</Title>
+    </head>
+
+    <body>
+        <h3>Log In</h3>
+        <p><input id ="correo" type = "text" placeholder="Correo"></input></p>
+        <p><input id ="password" type = "password" placeholder="password"></input></p>
+        <p><button id = "loginBtn">Log In</button></p>
+        <p><a href="register.html">No tengo cuenta</a></p>
+    </body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+
+
+<script>
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyBXyv-kzGUGMitC5ph64lzsPJmcr-FHr3o",
+    authDomain: "contact-list-js.firebaseapp.com",
+    databaseURL: "https://contact-list-js.firebaseio.com",
+    projectId: "contact-list-js",
+    storageBucket: "contact-list-js.appspot.com",
+    messagingSenderId: "556900195355",
+    appId: "1:556900195355:web:72b266d801dfb94b4f6cbe",
+    measurementId: "G-1Z910G9P9C"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+<script src="js/login.js"></script>

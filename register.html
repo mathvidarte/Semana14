@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semana 14</title>
+    </head>
+
+    <body>
+        <h3>Registro</h3>
+
+        <p> <input id ="nombre" type = "text" placeholder="Nombre"></p>
+        <p> <input id ="telefono" type = "text" placeholder="Telefono"></p>
+        <p> <input id="correo" type="text" placeholder="Correo"></p>
+        <p> <input id="password" type="password" placeholder="Password"></p>
+        <p> <input id ="rpassword" type = "password" placeholder="Password again"></p>
+        <p> <button id = "regBtm"> Registrarse </button> </p>
+        <p><a href="login.html">Ya tengo cuenta</a></p>
+
+    </body>
+
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+
+<script>
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyBXyv-kzGUGMitC5ph64lzsPJmcr-FHr3o",
+    authDomain: "contact-list-js.firebaseapp.com",
+    databaseURL: "https://contact-list-js.firebaseio.com",
+    projectId: "contact-list-js",
+    storageBucket: "contact-list-js.appspot.com",
+    messagingSenderId: "556900195355",
+    appId: "1:556900195355:web:72b266d801dfb94b4f6cbe",
+    measurementId: "G-1Z910G9P9C"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+<script src="js/register.js"></script>
