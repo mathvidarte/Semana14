@@ -9,6 +9,9 @@ const logout = document.getElementById('logout');
 //Btn agregar
 const agregar = document.getElementById('agregar');
 
+//Conteiner de los contactos
+const contactosContainer = document.getElementById('contactosContainer');
+
 //Saber quien esta loggeado
 auth.onAuthStateChanged(
     (user)=>{
@@ -21,11 +24,28 @@ auth.onAuthStateChanged(
                 }
             );
 
+        //Lectura del firebase
+            database.ref('users/'+user.uid+'/contacts').on('value', function(data){
+                contactosContainer.innerHTML='';
+                data.forEach(
+                    contactos =>{
+                        let valor = contactos.val();
+                        console.log(valor.nombre);
+                        let mc = new MisContactos(valor);
+                        contactosContainer.appendChild(mc.render());
+                    }
+            );
+        });
+    
         }else {
             window.location.href="login.html";
         }
     }
 );
+
+
+
+
 
 
 

@@ -11,18 +11,21 @@ const addContacts = () => {
         (user)=>{
             let reference = database.ref('users/'+user.uid+'/contacts').push();
             let contactos = {
+                id: reference.key,
                 nombre: nombre.value,
                 telefono: telefono.value
+                
             };
+            console.log(nombre);
             reference.set(contactos).then(
                 ()=>{
-                    window.location.href="index.html";
+                   window.location.href="index.html";
                 }
             );
         }
         
     );
-   
+  
     
 }
 addContact.addEventListener('click', addContacts);

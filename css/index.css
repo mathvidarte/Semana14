@@ -1,0 +1,16 @@
+.listaContactos{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 20em;
+    background-color: antiquewhite;
+    padding: 1em;
+    position: relative;
+}
+
+.deleteBtn{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background-color: red;
+    color: white;
+}
